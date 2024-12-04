@@ -8,10 +8,10 @@ body {
 h1 {
     position: fixed;
     margin: 0 auto;
-    bottom: 5%;
+    bottom: 15%;
     left: 0;
     right: 0;
-    width: 12em;
+    width: 25em;
     text-align: center;
     font-size: 2em;
     font-weight: 100;
@@ -30,7 +30,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 140px;
 }
 
 .candle {
