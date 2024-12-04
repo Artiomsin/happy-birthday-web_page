@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const numCandles = 18; // Количество свечей
+    const numCandles = 1; // Количество свечей
     let blownCandles = 0;  // Счетчик задутых свечей
 
     // Создаем свечи и добавляем их в контейнер
