@@ -29,6 +29,8 @@ h1 {
 }
 
 #candles-container {
+    position: absolute;
+    transform: translate(-0%, -0%);
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Центрируем по горизонтали */
