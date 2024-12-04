@@ -8,11 +8,12 @@ body {
 }
 
 h1 {
-    position: fixed;
+    position: absolute;
     margin: 0 auto;
     bottom: 15%;
     left: 0;
     right: 0;
+    transform: translate(-0%, -0%);
     width: 25em;
     text-align: center;
     font-size: 2em;
