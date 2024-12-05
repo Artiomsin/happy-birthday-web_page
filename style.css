@@ -3,18 +3,14 @@
 body {
     background-color: #1e1934;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
 }
-
 h1 {
-    position: absolute;
+    position: fixed;
     margin: 0 auto;
-    bottom: 15%;
+    bottom: 5%;
     left: 0;
     right: 0;
-    transform: translate(-0%, -0%);
-    width: 25em;
+    width: 20em;
     text-align: center;
     font-size: 2em;
     font-weight: 100;
@@ -30,17 +26,16 @@ h1 {
 
 #candles-container {
     position: absolute;
-    transform: translate(-0%, -0%);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     margin-top: 140px;
     width: 100%;
-    max-width: 100%; /* Убираем ограничение по ширине, чтобы контейнер был 100% ширины */
-    box-sizing: border-box; /* Чтобы учитывать padding и border */
-    padding: 0 20px; /* Отступы от края контейнера */
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px; 
 }
 
 .candle {
@@ -48,7 +43,6 @@ h1 {
     width: 1.5em;
     height: 10em;
     overflow: hidden;
-    margin: 0 auto; /* Центрируем свечу в ее контейнере */
 }
 
 .candle::before {
@@ -275,49 +269,21 @@ h1 {
     }
     100% {
         opacity: 0;
-        transform: scale(0) translateY(-200px) translateX(100px);
+        transform: scale(0) translateY(100px) translateX(-50px);
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 1.5em;
-        bottom: 10%;
-    }
-
-    #candles-container {
-        gap: 15px;
-    }
-
-    .candle {
-        width: 1.2em;
-        height: 8em;
-    }
-
-    #top #flame {
-        width: 1.2em;
-        height: 1.2em;
+        width: 90%;
+        padding: 0 10px;
     }
 }
 
 @media (max-width: 480px) {
     h1 {
         font-size: 1.2em;
-        bottom: 8%;
-    }
-
-    #candles-container {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .candle {
-        width: 0.8em;
-        height: 6em;
-    }
-
-    #top #flame {
-        width: 0.8em;
-        height: 1em;
+        line-height: 1.2em;
     }
 }
